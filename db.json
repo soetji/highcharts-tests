@@ -1617,6 +1617,1192 @@
         }
       ],
       "id": 2
+    },
+    {
+      "date": "2017-08-04T16:43:41.623Z",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36",
+      "chartsTotal": 1,
+      "dataPointsTotal": 900,
+      "result": [
+        {
+          "seriesTotal": 1,
+          "duration": 65
+        },
+        {
+          "seriesTotal": 2,
+          "duration": 50
+        },
+        {
+          "seriesTotal": 3,
+          "duration": 65
+        },
+        {
+          "seriesTotal": 4,
+          "duration": 78
+        },
+        {
+          "seriesTotal": 5,
+          "duration": 114
+        },
+        {
+          "seriesTotal": 6,
+          "duration": 82
+        },
+        {
+          "seriesTotal": 7,
+          "duration": 92
+        },
+        {
+          "seriesTotal": 8,
+          "duration": 108
+        },
+        {
+          "seriesTotal": 9,
+          "duration": 112
+        },
+        {
+          "seriesTotal": 10,
+          "duration": 116
+        },
+        {
+          "seriesTotal": 11,
+          "duration": 180
+        },
+        {
+          "seriesTotal": 12,
+          "duration": 132
+        },
+        {
+          "seriesTotal": 13,
+          "duration": 131
+        },
+        {
+          "seriesTotal": 14,
+          "duration": 139
+        },
+        {
+          "seriesTotal": 15,
+          "duration": 144
+        },
+        {
+          "seriesTotal": 16,
+          "duration": 204
+        },
+        {
+          "seriesTotal": 17,
+          "duration": 155
+        },
+        {
+          "seriesTotal": 18,
+          "duration": 192
+        },
+        {
+          "seriesTotal": 19,
+          "duration": 236
+        },
+        {
+          "seriesTotal": 20,
+          "duration": 244
+        },
+        {
+          "seriesTotal": 21,
+          "duration": 183
+        },
+        {
+          "seriesTotal": 22,
+          "duration": 210
+        },
+        {
+          "seriesTotal": 23,
+          "duration": 242
+        },
+        {
+          "seriesTotal": 24,
+          "duration": 235
+        },
+        {
+          "seriesTotal": 25,
+          "duration": 245
+        },
+        {
+          "seriesTotal": 26,
+          "duration": 240
+        },
+        {
+          "seriesTotal": 27,
+          "duration": 273
+        },
+        {
+          "seriesTotal": 28,
+          "duration": 249
+        },
+        {
+          "seriesTotal": 29,
+          "duration": 248
+        },
+        {
+          "seriesTotal": 30,
+          "duration": 252
+        },
+        {
+          "seriesTotal": 31,
+          "duration": 275
+        },
+        {
+          "seriesTotal": 32,
+          "duration": 258
+        },
+        {
+          "seriesTotal": 33,
+          "duration": 280
+        },
+        {
+          "seriesTotal": 34,
+          "duration": 291
+        },
+        {
+          "seriesTotal": 35,
+          "duration": 281
+        },
+        {
+          "seriesTotal": 36,
+          "duration": 290
+        },
+        {
+          "seriesTotal": 37,
+          "duration": 279
+        },
+        {
+          "seriesTotal": 38,
+          "duration": 303
+        },
+        {
+          "seriesTotal": 39,
+          "duration": 308
+        },
+        {
+          "seriesTotal": 40,
+          "duration": 287
+        },
+        {
+          "seriesTotal": 41,
+          "duration": 290
+        },
+        {
+          "seriesTotal": 42,
+          "duration": 301
+        },
+        {
+          "seriesTotal": 43,
+          "duration": 316
+        },
+        {
+          "seriesTotal": 44,
+          "duration": 319
+        },
+        {
+          "seriesTotal": 45,
+          "duration": 395
+        },
+        {
+          "seriesTotal": 46,
+          "duration": 337
+        },
+        {
+          "seriesTotal": 47,
+          "duration": 346
+        },
+        {
+          "seriesTotal": 48,
+          "duration": 348
+        },
+        {
+          "seriesTotal": 49,
+          "duration": 371
+        },
+        {
+          "seriesTotal": 50,
+          "duration": 408
+        },
+        {
+          "seriesTotal": 51,
+          "duration": 407
+        },
+        {
+          "seriesTotal": 52,
+          "duration": 392
+        },
+        {
+          "seriesTotal": 53,
+          "duration": 376
+        },
+        {
+          "seriesTotal": 54,
+          "duration": 413
+        },
+        {
+          "seriesTotal": 55,
+          "duration": 379
+        },
+        {
+          "seriesTotal": 56,
+          "duration": 389
+        },
+        {
+          "seriesTotal": 57,
+          "duration": 406
+        },
+        {
+          "seriesTotal": 58,
+          "duration": 419
+        },
+        {
+          "seriesTotal": 59,
+          "duration": 415
+        },
+        {
+          "seriesTotal": 60,
+          "duration": 442
+        },
+        {
+          "seriesTotal": 61,
+          "duration": 419
+        },
+        {
+          "seriesTotal": 62,
+          "duration": 430
+        },
+        {
+          "seriesTotal": 63,
+          "duration": 438
+        },
+        {
+          "seriesTotal": 64,
+          "duration": 462
+        },
+        {
+          "seriesTotal": 65,
+          "duration": 428
+        },
+        {
+          "seriesTotal": 66,
+          "duration": 469
+        },
+        {
+          "seriesTotal": 67,
+          "duration": 430
+        },
+        {
+          "seriesTotal": 68,
+          "duration": 439
+        },
+        {
+          "seriesTotal": 69,
+          "duration": 469
+        },
+        {
+          "seriesTotal": 70,
+          "duration": 467
+        },
+        {
+          "seriesTotal": 71,
+          "duration": 498
+        },
+        {
+          "seriesTotal": 72,
+          "duration": 474
+        },
+        {
+          "seriesTotal": 73,
+          "duration": 504
+        },
+        {
+          "seriesTotal": 74,
+          "duration": 486
+        },
+        {
+          "seriesTotal": 75,
+          "duration": 471
+        },
+        {
+          "seriesTotal": 76,
+          "duration": 521
+        },
+        {
+          "seriesTotal": 77,
+          "duration": 527
+        },
+        {
+          "seriesTotal": 78,
+          "duration": 543
+        },
+        {
+          "seriesTotal": 79,
+          "duration": 500
+        },
+        {
+          "seriesTotal": 80,
+          "duration": 540
+        },
+        {
+          "seriesTotal": 81,
+          "duration": 526
+        },
+        {
+          "seriesTotal": 82,
+          "duration": 525
+        },
+        {
+          "seriesTotal": 83,
+          "duration": 556
+        },
+        {
+          "seriesTotal": 84,
+          "duration": 531
+        },
+        {
+          "seriesTotal": 85,
+          "duration": 574
+        },
+        {
+          "seriesTotal": 86,
+          "duration": 558
+        },
+        {
+          "seriesTotal": 87,
+          "duration": 607
+        },
+        {
+          "seriesTotal": 88,
+          "duration": 575
+        },
+        {
+          "seriesTotal": 89,
+          "duration": 592
+        },
+        {
+          "seriesTotal": 90,
+          "duration": 594
+        },
+        {
+          "seriesTotal": 91,
+          "duration": 603
+        },
+        {
+          "seriesTotal": 92,
+          "duration": 561
+        },
+        {
+          "seriesTotal": 93,
+          "duration": 696
+        },
+        {
+          "seriesTotal": 94,
+          "duration": 586
+        },
+        {
+          "seriesTotal": 95,
+          "duration": 573
+        },
+        {
+          "seriesTotal": 96,
+          "duration": 595
+        },
+        {
+          "seriesTotal": 97,
+          "duration": 608
+        },
+        {
+          "seriesTotal": 98,
+          "duration": 604
+        },
+        {
+          "seriesTotal": 99,
+          "duration": 609
+        },
+        {
+          "seriesTotal": 100,
+          "duration": 618
+        },
+        {
+          "seriesTotal": 101,
+          "duration": 619
+        },
+        {
+          "seriesTotal": 102,
+          "duration": 634
+        },
+        {
+          "seriesTotal": 103,
+          "duration": 642
+        },
+        {
+          "seriesTotal": 104,
+          "duration": 639
+        },
+        {
+          "seriesTotal": 105,
+          "duration": 636
+        },
+        {
+          "seriesTotal": 106,
+          "duration": 634
+        },
+        {
+          "seriesTotal": 107,
+          "duration": 653
+        },
+        {
+          "seriesTotal": 108,
+          "duration": 651
+        },
+        {
+          "seriesTotal": 109,
+          "duration": 654
+        },
+        {
+          "seriesTotal": 110,
+          "duration": 653
+        },
+        {
+          "seriesTotal": 111,
+          "duration": 684
+        },
+        {
+          "seriesTotal": 112,
+          "duration": 683
+        },
+        {
+          "seriesTotal": 113,
+          "duration": 761
+        },
+        {
+          "seriesTotal": 114,
+          "duration": 716
+        },
+        {
+          "seriesTotal": 115,
+          "duration": 730
+        },
+        {
+          "seriesTotal": 116,
+          "duration": 742
+        },
+        {
+          "seriesTotal": 117,
+          "duration": 743
+        },
+        {
+          "seriesTotal": 118,
+          "duration": 719
+        },
+        {
+          "seriesTotal": 119,
+          "duration": 768
+        },
+        {
+          "seriesTotal": 120,
+          "duration": 765
+        },
+        {
+          "seriesTotal": 121,
+          "duration": 924
+        },
+        {
+          "seriesTotal": 122,
+          "duration": 986
+        },
+        {
+          "seriesTotal": 123,
+          "duration": 960
+        },
+        {
+          "seriesTotal": 124,
+          "duration": 962
+        },
+        {
+          "seriesTotal": 125,
+          "duration": 861
+        },
+        {
+          "seriesTotal": 126,
+          "duration": 956
+        },
+        {
+          "seriesTotal": 127,
+          "duration": 996
+        },
+        {
+          "seriesTotal": 128,
+          "duration": 982
+        },
+        {
+          "seriesTotal": 129,
+          "duration": 1026
+        },
+        {
+          "seriesTotal": 130,
+          "duration": 1004
+        },
+        {
+          "seriesTotal": 131,
+          "duration": 1022
+        },
+        {
+          "seriesTotal": 132,
+          "duration": 1044
+        },
+        {
+          "seriesTotal": 133,
+          "duration": 1014
+        },
+        {
+          "seriesTotal": 134,
+          "duration": 1025
+        },
+        {
+          "seriesTotal": 135,
+          "duration": 960
+        },
+        {
+          "seriesTotal": 136,
+          "duration": 1015
+        },
+        {
+          "seriesTotal": 137,
+          "duration": 1023
+        },
+        {
+          "seriesTotal": 138,
+          "duration": 977
+        },
+        {
+          "seriesTotal": 139,
+          "duration": 1032
+        },
+        {
+          "seriesTotal": 140,
+          "duration": 1059
+        },
+        {
+          "seriesTotal": 141,
+          "duration": 1017
+        },
+        {
+          "seriesTotal": 142,
+          "duration": 1026
+        },
+        {
+          "seriesTotal": 143,
+          "duration": 1062
+        },
+        {
+          "seriesTotal": 144,
+          "duration": 1033
+        },
+        {
+          "seriesTotal": 145,
+          "duration": 898
+        },
+        {
+          "seriesTotal": 146,
+          "duration": 925
+        },
+        {
+          "seriesTotal": 147,
+          "duration": 947
+        },
+        {
+          "seriesTotal": 148,
+          "duration": 935
+        },
+        {
+          "seriesTotal": 149,
+          "duration": 1069
+        },
+        {
+          "seriesTotal": 150,
+          "duration": 1048
+        },
+        {
+          "seriesTotal": 151,
+          "duration": 1006
+        },
+        {
+          "seriesTotal": 152,
+          "duration": 1216
+        },
+        {
+          "seriesTotal": 153,
+          "duration": 1228
+        },
+        {
+          "seriesTotal": 154,
+          "duration": 1081
+        },
+        {
+          "seriesTotal": 155,
+          "duration": 1098
+        },
+        {
+          "seriesTotal": 156,
+          "duration": 1103
+        },
+        {
+          "seriesTotal": 157,
+          "duration": 1188
+        },
+        {
+          "seriesTotal": 158,
+          "duration": 1179
+        },
+        {
+          "seriesTotal": 159,
+          "duration": 1169
+        },
+        {
+          "seriesTotal": 160,
+          "duration": 1100
+        },
+        {
+          "seriesTotal": 161,
+          "duration": 1140
+        },
+        {
+          "seriesTotal": 162,
+          "duration": 1207
+        },
+        {
+          "seriesTotal": 163,
+          "duration": 1234
+        },
+        {
+          "seriesTotal": 164,
+          "duration": 1172
+        },
+        {
+          "seriesTotal": 165,
+          "duration": 1290
+        },
+        {
+          "seriesTotal": 166,
+          "duration": 1198
+        },
+        {
+          "seriesTotal": 167,
+          "duration": 1274
+        },
+        {
+          "seriesTotal": 168,
+          "duration": 1333
+        },
+        {
+          "seriesTotal": 169,
+          "duration": 1131
+        },
+        {
+          "seriesTotal": 170,
+          "duration": 1086
+        },
+        {
+          "seriesTotal": 171,
+          "duration": 1173
+        },
+        {
+          "seriesTotal": 172,
+          "duration": 1177
+        },
+        {
+          "seriesTotal": 173,
+          "duration": 1300
+        },
+        {
+          "seriesTotal": 174,
+          "duration": 1220
+        },
+        {
+          "seriesTotal": 175,
+          "duration": 1274
+        },
+        {
+          "seriesTotal": 176,
+          "duration": 1281
+        },
+        {
+          "seriesTotal": 177,
+          "duration": 1267
+        },
+        {
+          "seriesTotal": 178,
+          "duration": 1228
+        },
+        {
+          "seriesTotal": 179,
+          "duration": 1297
+        },
+        {
+          "seriesTotal": 180,
+          "duration": 1322
+        },
+        {
+          "seriesTotal": 181,
+          "duration": 1315
+        },
+        {
+          "seriesTotal": 182,
+          "duration": 1303
+        },
+        {
+          "seriesTotal": 183,
+          "duration": 1323
+        },
+        {
+          "seriesTotal": 184,
+          "duration": 1406
+        },
+        {
+          "seriesTotal": 185,
+          "duration": 1351
+        },
+        {
+          "seriesTotal": 186,
+          "duration": 1468
+        },
+        {
+          "seriesTotal": 187,
+          "duration": 1315
+        },
+        {
+          "seriesTotal": 188,
+          "duration": 1473
+        },
+        {
+          "seriesTotal": 189,
+          "duration": 1336
+        },
+        {
+          "seriesTotal": 190,
+          "duration": 1385
+        },
+        {
+          "seriesTotal": 191,
+          "duration": 1390
+        },
+        {
+          "seriesTotal": 192,
+          "duration": 1474
+        },
+        {
+          "seriesTotal": 193,
+          "duration": 1402
+        },
+        {
+          "seriesTotal": 194,
+          "duration": 1412
+        },
+        {
+          "seriesTotal": 195,
+          "duration": 1394
+        },
+        {
+          "seriesTotal": 196,
+          "duration": 1322
+        },
+        {
+          "seriesTotal": 197,
+          "duration": 1414
+        },
+        {
+          "seriesTotal": 198,
+          "duration": 1402
+        },
+        {
+          "seriesTotal": 199,
+          "duration": 1408
+        },
+        {
+          "seriesTotal": 200,
+          "duration": 1453
+        }
+      ],
+      "id": 3
+    },
+    {
+      "date": "2017-08-04T16:49:22.519Z",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36",
+      "chartsTotal": 1,
+      "dataPointsTotal": 900,
+      "result": [
+        {
+          "seriesTotal": 1,
+          "duration": 74
+        },
+        {
+          "seriesTotal": 2,
+          "duration": 51
+        },
+        {
+          "seriesTotal": 3,
+          "duration": 66
+        },
+        {
+          "seriesTotal": 4,
+          "duration": 74
+        },
+        {
+          "seriesTotal": 5,
+          "duration": 82
+        },
+        {
+          "seriesTotal": 6,
+          "duration": 86
+        },
+        {
+          "seriesTotal": 7,
+          "duration": 97
+        },
+        {
+          "seriesTotal": 8,
+          "duration": 112
+        },
+        {
+          "seriesTotal": 9,
+          "duration": 115
+        },
+        {
+          "seriesTotal": 10,
+          "duration": 117
+        },
+        {
+          "seriesTotal": 11,
+          "duration": 132
+        },
+        {
+          "seriesTotal": 12,
+          "duration": 151
+        },
+        {
+          "seriesTotal": 13,
+          "duration": 153
+        },
+        {
+          "seriesTotal": 14,
+          "duration": 147
+        },
+        {
+          "seriesTotal": 15,
+          "duration": 150
+        },
+        {
+          "seriesTotal": 16,
+          "duration": 156
+        },
+        {
+          "seriesTotal": 17,
+          "duration": 156
+        },
+        {
+          "seriesTotal": 18,
+          "duration": 183
+        },
+        {
+          "seriesTotal": 19,
+          "duration": 181
+        },
+        {
+          "seriesTotal": 20,
+          "duration": 200
+        },
+        {
+          "seriesTotal": 21,
+          "duration": 189
+        },
+        {
+          "seriesTotal": 22,
+          "duration": 188
+        },
+        {
+          "seriesTotal": 23,
+          "duration": 192
+        },
+        {
+          "seriesTotal": 24,
+          "duration": 210
+        },
+        {
+          "seriesTotal": 25,
+          "duration": 216
+        },
+        {
+          "seriesTotal": 26,
+          "duration": 221
+        },
+        {
+          "seriesTotal": 27,
+          "duration": 238
+        },
+        {
+          "seriesTotal": 28,
+          "duration": 217
+        },
+        {
+          "seriesTotal": 29,
+          "duration": 226
+        },
+        {
+          "seriesTotal": 30,
+          "duration": 232
+        },
+        {
+          "seriesTotal": 31,
+          "duration": 245
+        },
+        {
+          "seriesTotal": 32,
+          "duration": 268
+        },
+        {
+          "seriesTotal": 33,
+          "duration": 276
+        },
+        {
+          "seriesTotal": 34,
+          "duration": 287
+        },
+        {
+          "seriesTotal": 35,
+          "duration": 273
+        },
+        {
+          "seriesTotal": 36,
+          "duration": 273
+        },
+        {
+          "seriesTotal": 37,
+          "duration": 272
+        },
+        {
+          "seriesTotal": 38,
+          "duration": 280
+        },
+        {
+          "seriesTotal": 39,
+          "duration": 277
+        },
+        {
+          "seriesTotal": 40,
+          "duration": 311
+        },
+        {
+          "seriesTotal": 41,
+          "duration": 336
+        },
+        {
+          "seriesTotal": 42,
+          "duration": 343
+        },
+        {
+          "seriesTotal": 43,
+          "duration": 364
+        },
+        {
+          "seriesTotal": 44,
+          "duration": 380
+        },
+        {
+          "seriesTotal": 45,
+          "duration": 321
+        },
+        {
+          "seriesTotal": 46,
+          "duration": 341
+        },
+        {
+          "seriesTotal": 47,
+          "duration": 330
+        },
+        {
+          "seriesTotal": 48,
+          "duration": 348
+        },
+        {
+          "seriesTotal": 49,
+          "duration": 354
+        },
+        {
+          "seriesTotal": 50,
+          "duration": 352
+        },
+        {
+          "seriesTotal": 51,
+          "duration": 404
+        },
+        {
+          "seriesTotal": 52,
+          "duration": 389
+        },
+        {
+          "seriesTotal": 53,
+          "duration": 437
+        },
+        {
+          "seriesTotal": 54,
+          "duration": 627
+        },
+        {
+          "seriesTotal": 55,
+          "duration": 381
+        },
+        {
+          "seriesTotal": 56,
+          "duration": 420
+        },
+        {
+          "seriesTotal": 57,
+          "duration": 394
+        },
+        {
+          "seriesTotal": 58,
+          "duration": 408
+        },
+        {
+          "seriesTotal": 59,
+          "duration": 446
+        },
+        {
+          "seriesTotal": 60,
+          "duration": 604
+        },
+        {
+          "seriesTotal": 61,
+          "duration": 536
+        },
+        {
+          "seriesTotal": 62,
+          "duration": 500
+        },
+        {
+          "seriesTotal": 63,
+          "duration": 529
+        },
+        {
+          "seriesTotal": 64,
+          "duration": 662
+        },
+        {
+          "seriesTotal": 65,
+          "duration": 456
+        },
+        {
+          "seriesTotal": 66,
+          "duration": 446
+        },
+        {
+          "seriesTotal": 67,
+          "duration": 493
+        },
+        {
+          "seriesTotal": 68,
+          "duration": 458
+        },
+        {
+          "seriesTotal": 69,
+          "duration": 467
+        },
+        {
+          "seriesTotal": 70,
+          "duration": 522
+        },
+        {
+          "seriesTotal": 71,
+          "duration": 571
+        },
+        {
+          "seriesTotal": 72,
+          "duration": 547
+        },
+        {
+          "seriesTotal": 73,
+          "duration": 562
+        },
+        {
+          "seriesTotal": 74,
+          "duration": 562
+        },
+        {
+          "seriesTotal": 75,
+          "duration": 820
+        },
+        {
+          "seriesTotal": 76,
+          "duration": 509
+        },
+        {
+          "seriesTotal": 77,
+          "duration": 528
+        },
+        {
+          "seriesTotal": 78,
+          "duration": 559
+        },
+        {
+          "seriesTotal": 79,
+          "duration": 523
+        },
+        {
+          "seriesTotal": 80,
+          "duration": 545
+        },
+        {
+          "seriesTotal": 81,
+          "duration": 583
+        },
+        {
+          "seriesTotal": 82,
+          "duration": 614
+        },
+        {
+          "seriesTotal": 83,
+          "duration": 665
+        },
+        {
+          "seriesTotal": 84,
+          "duration": 680
+        },
+        {
+          "seriesTotal": 85,
+          "duration": 658
+        },
+        {
+          "seriesTotal": 86,
+          "duration": 841
+        },
+        {
+          "seriesTotal": 87,
+          "duration": 583
+        },
+        {
+          "seriesTotal": 88,
+          "duration": 549
+        },
+        {
+          "seriesTotal": 89,
+          "duration": 741
+        },
+        {
+          "seriesTotal": 90,
+          "duration": 592
+        },
+        {
+          "seriesTotal": 91,
+          "duration": 595
+        },
+        {
+          "seriesTotal": 200,
+          "duration": 1338
+        }
+      ],
+      "id": 4
     }
   ]
 }
