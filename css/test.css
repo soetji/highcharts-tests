@@ -1,0 +1,9 @@
+#box {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.hc-box {
+    width: 400px;
+    height: 400px;
+}
