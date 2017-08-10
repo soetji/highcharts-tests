@@ -1,5 +1,5 @@
-const dataUrl = 'http://g01dlapp01.galileosuite.com:3000/data-points-load';
-const chartTitle = 'Data Points Load';
+const dataUrl = 'http://g01dlapp01.galileosuite.com:3000/data-points-redraw';
+const chartTitle = 'Data Points Redraw';
 const xAxisTitle = 'Data points total';
 
 function makeSeriesName(series) {
@@ -11,7 +11,7 @@ function makePointDebugTitle(series, point) {
 }
 
 function tooltipFormatter(point) {
-    return `${this.series.name}:<br/><b>${this.x}</b> data points <b>${this.y}</b> millisecs`
+    return `${this.series.name}:<br/><b>${this.x}</b> data points <b>${this.y}</b> msec`
 }
 
 go();

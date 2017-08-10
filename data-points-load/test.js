@@ -17,4 +17,4 @@ const makeResult = (times) => ({ dataPointsTotal: dataPointsTotal, times: times 
 const isFinalPage = () => dataPointsTotal >= dataPointsMax;
 const getPageVal = () => dataPointsTotal;
 
-go();
+$.getScript('js/test-load.js').then(go);

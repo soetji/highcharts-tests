@@ -17,4 +17,4 @@ const makeResult = (times) => ({ chartsTotal: chartsTotal, times: times });
 const isFinalPage = () => chartsTotal >= chartsMax;
 const getPageVal = () => chartsTotal;
 
-go();
+$.getScript('js/test-load.js').then(go);

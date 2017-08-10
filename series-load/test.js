@@ -17,4 +17,4 @@ const makeResult = (times) => ({ seriesTotal: seriesTotal, times: times });
 const isFinalPage = () => seriesTotal >= seriesMax;
 const getPageVal = () => seriesTotal;
 
-go();
+$.getScript('js/test-load.js').then(go);

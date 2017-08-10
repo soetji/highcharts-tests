@@ -11,7 +11,7 @@ function makePointDebugTitle(series, point) {
 }
 
 function tooltipFormatter(point) {
-    return `${this.series.name}:<br/><b>${this.x}</b> data points <b>${this.y}</b> millisecs`
+    return `${this.series.name}:<br/><b>${this.x}</b> data points <b>${this.y}</b> msec`
 }
 
 go();

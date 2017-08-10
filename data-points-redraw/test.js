@@ -1,4 +1,4 @@
-const dataUrl = 'http://g01dlapp01.galileosuite.com:3000/data-points-load';
+const dataUrl = 'http://g01dlapp01.galileosuite.com:3000/data-points-redraw';
 const saveData = false;
 const chartsTotal = 1;
 const dataPointsTotal = getUrlValue();
@@ -17,4 +17,4 @@ const makeResult = (times) => ({ dataPointsTotal: dataPointsTotal, times: times 
 const isFinalPage = () => dataPointsTotal >= dataPointsMax;
 const getPageVal = () => dataPointsTotal;
 
-go();
+$.getScript('js/test-redraw.js').then(go);
