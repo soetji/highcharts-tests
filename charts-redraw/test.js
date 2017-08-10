@@ -1,5 +1,5 @@
 const dataUrl = 'http://g01dlapp01.galileosuite.com:3000/charts-redraw';
-const saveData = false;
+const saveDataToDb = false;
 const chartsTotal = getUrlValue();
 const dataPointsTotal = 300;
 const seriesTotal = 10;
@@ -15,6 +15,5 @@ const initialData = {
 
 const makeResult = (times) => ({ chartsTotal: chartsTotal, times: times });
 const isFinalPage = () => chartsTotal >= chartsMax;
-const getPageVal = () => chartsTotal;
 
 $.getScript('js/test-redraw.js').then(go);

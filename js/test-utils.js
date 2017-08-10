@@ -61,11 +61,34 @@ function getUrlValue() {
     return params.val === undefined ? undefined : Number(params.val);
 }
 
-function newUrl(val) {
+function nextUrl() {
     const params = uri.search(true);
-    params.val = val;
+    const val = getUrlValue();
+    params.val = val === 1 ? testIncrement : val + testIncrement;
     return uri.search(params).toString();
 }
+
+function saveData() {
+    const res = JSON.parse(myStorage.getItem('sessionTimeData'));
+    pageChartData[this.options.test.chartIndex] = Date.now() - this.options.test.startTime;
+    res.push(makeResult(pageChartData));
+    loadedChartsTotal++;
+    if (loadedChartsTotal === this.options.test.chartsTotal) {
+        if (isFinalPage()) {
+            const data = JSON.parse(myStorage.getItem('initialData'));
+            myStorage.removeItem('initialData');
+            myStorage.removeItem('sessionTimeData');
+            data.result = res;
+            console.log(data);
+            if (saveDataToDb) {
+                postData(data);
+            }
+        } else {
+            myStorage.setItem('sessionTimeData', JSON.stringify(res));
+            location.href = nextUrl();
+        }
+    }
+};
 
 function init() {
     const params = uri.search(true);

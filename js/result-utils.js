@@ -90,7 +90,7 @@ function go() {
         const seriesData = data.map(ser => ({
             name: makeSeriesName(ser),
             data: ser.result.map(res => ({
-                x: res.chartsTotal,
+                x: getX(res),
                 y: getY(res.times),
                 debugTitle: makePointDebugTitle(ser, res),
                 times: res.times

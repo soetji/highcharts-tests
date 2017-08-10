@@ -1,5 +1,5 @@
 const dataUrl = 'http://g01dlapp01.galileosuite.com:3000/data-points-load';
-const saveData = false;
+const saveDataToDb = false;
 const chartsTotal = 1;
 const dataPointsTotal = getUrlValue();
 const seriesTotal = 200;
@@ -15,6 +15,5 @@ const initialData = {
 
 const makeResult = (times) => ({ dataPointsTotal: dataPointsTotal, times: times });
 const isFinalPage = () => dataPointsTotal >= dataPointsMax;
-const getPageVal = () => dataPointsTotal;
 
 $.getScript('js/test-load.js').then(go);

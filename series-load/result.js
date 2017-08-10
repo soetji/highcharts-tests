@@ -2,6 +2,10 @@ const dataUrl = 'http://g01dlapp01.galileosuite.com:3000/series-load';
 const chartTitle = 'Series Load';
 const xAxisTitle = 'Series total';
 
+function getX(result) {
+    return result.seriesTotal
+}
+
 function makeSeriesName(series) {
     return `${series.chartsTotal} charts ${series.dataPointsTotal} data points`;
 }

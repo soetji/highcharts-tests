@@ -2,6 +2,10 @@ const dataUrl = 'http://g01dlapp01.galileosuite.com:3000/data-points-redraw';
 const chartTitle = 'Data Points Redraw';
 const xAxisTitle = 'Data points total';
 
+function getX(result) {
+    return result.dataPointsTotal
+}
+
 function makeSeriesName(series) {
     return `${series.chartsTotal} charts ${series.seriesTotal} series`;
 }
