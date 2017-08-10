@@ -1,4 +1,4 @@
-const dataUrl = 'http://g01dlapp01.galileosuite.com:3000/dataPoints';
+const dataUrl = 'http://g01dlapp01.galileosuite.com:3000/data-points-load';
 
 const options = {
   chart: {
