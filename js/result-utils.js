@@ -1,3 +1,5 @@
+const uri = new URI(location.href);
+
 function __handlePointClick() {
     console.log(this.options.debugTitle, this.options.times);
 }

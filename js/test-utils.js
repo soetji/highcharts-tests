@@ -1,6 +1,7 @@
 const uri = new URI(location.href);
 const pageChartData = [];
 const myStorage = window.localStorage;
+const testIncrement = 5;
 let loadedChartsTotal = 0;
 
 Highcharts.setOptions({
@@ -57,21 +58,25 @@ function putData(id, data) {
 
 function getUrlValue() {
     const params = uri.search(true);
-    return params.val === undefined ? 0 : Number(params.val);
+    return params.val === undefined ? undefined : Number(params.val);
 }
 
 function newUrl(val) {
-    return uri.search({ val: val }).toString();
+    const params = uri.search(true);
+    params.val = val;
+    return uri.search(params).toString();
 }
 
 function init() {
+    const params = uri.search(true);
+    params.val = 1;
     myStorage.setItem('sessionTimeData', '[]');
     myStorage.setItem('initialData', JSON.stringify(initialData));
-    location.href = uri.search({ val: 1 }).toString();
+    location.href = uri.search(params).toString();
 }
 
 function go() {
-    if (myStorage.getItem('sessionTimeData') === null) {
+    if (getUrlValue() === undefined || myStorage.getItem('sessionTimeData') === null) {
         init();
     } else {
         for (let i = 0; i < chartsTotal; i++) {
