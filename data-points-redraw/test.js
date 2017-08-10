@@ -2,8 +2,8 @@ const dataUrl = 'http://g01dlapp01.galileosuite.com:3000/data-points-redraw';
 const saveData = false;
 const chartsTotal = 1;
 const dataPointsTotal = getUrlValue();
-const seriesTotal = 200;
-const dataPointsMax = 9;
+const seriesTotal = 10;
+const dataPointsMax = 900;
 
 const initialData = {
     date: new Date(),

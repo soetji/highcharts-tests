@@ -1,5 +1,27 @@
 const uri = new URI(location.href);
 
+function goMode(mode) {
+    const params = uri.search(true);
+    params.mode = mode;
+    location.href = uri.search(params).toString();
+}
+
+function goSum() {
+    goMode('sum');
+}
+
+function goAve() {
+    goMode('ave');
+}
+
+function goMax() {
+    goMode('max');
+}
+
+function goMin() {
+    goMode('min');
+}
+
 function __handlePointClick() {
     console.log(this.options.debugTitle, this.options.times);
 }
