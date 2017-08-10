@@ -1,5 +1,5 @@
 function __handlePointClick() {
-    console.log(this.options.fullname, this.options.times);
+    console.log(this.options.debugTitle, this.options.times);
 }
 
 function getMode() {
@@ -68,7 +68,7 @@ function go() {
             data: ser.result.map(res => ({
                 x: res.chartsTotal,
                 y: getY(res.times),
-                fullname: makePointFullname(ser, res),
+                debugTitle: makePointDebugTitle(ser, res),
                 times: res.times
             }))
         }));

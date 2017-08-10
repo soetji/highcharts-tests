@@ -6,8 +6,8 @@ function makeSeriesName(series) {
     return `${series.chartsTotal} charts ${series.seriesTotal} series`;
 }
 
-function makePointFullname(series, point) {
-    return `${series.chartsTotal} charts ${point.dataPointsTotal} data points ${series.seriesTotal} series`
+function makePointDebugTitle(series, point) {
+    return `${series.chartsTotal} charts ${point.dataPointsTotal} data points ${series.seriesTotal} series. Time per data point:`;
 }
 
 function tooltipFormatter(point) {

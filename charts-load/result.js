@@ -1,13 +1,13 @@
 const dataUrl = 'http://g01dlapp01.galileosuite.com:3000/charts-load';
-const chartTitle = 'Chart Load';
-const xAxisTitle = 'Chart total';
+const chartTitle = 'Charts Load';
+const xAxisTitle = 'Charts total';
 
 function makeSeriesName(series) {
     return `${series.dataPointsTotal} data points ${series.seriesTotal} series`;
 }
 
-function makePointFullname(series, point) {
-    return `${point.chartsTotal} charts ${series.dataPointsTotal} data points ${series.seriesTotal} series`
+function makePointDebugTitle(series, point) {
+    return `${point.chartsTotal} charts ${series.dataPointsTotal} data points ${series.seriesTotal} series. Time per chart:`;
 }
 
 function tooltipFormatter(point) {
