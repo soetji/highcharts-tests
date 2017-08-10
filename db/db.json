@@ -1,5 +1,11 @@
 {
-  "charts": [
+  "charts-add": [],
+  "data-points-add": [],
+  "series-add": [],
+  "charts-redraw": [],
+  "data-points-redraw": [],
+  "series-redraw": [],
+  "charts-load": [
     {
       "date": "2017-08-08T01:01:57.815Z",
       "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36",
@@ -44586,7 +44592,7 @@
       "id": 6
     }
   ],
-  "dataPoints": [
+  "data-points-load": [
     {
       "date": "2017-08-08T01:18:16.300Z",
       "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36",
@@ -60818,7 +60824,7 @@
       "id": 5
     }
   ],
-  "series": [
+  "series-load": [
     {
       "date": "2017-08-08T01:39:31.006Z",
       "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36",
