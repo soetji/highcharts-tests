@@ -1,5 +1,5 @@
 const dataUrl = 'http://g01dlapp01.galileosuite.com:3000/series-load';
-const saveData = true;
+const saveData = false;
 const chartsTotal = 10;
 const dataPointsTotal = 900;
 const seriesTotal = getUrlValue();

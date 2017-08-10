@@ -13,7 +13,7 @@ function getY(times) {
 
     switch (getMode()) {
         case 'sum': return _.sum(times);
-        case 'ave': return _.sum(times) / times.length;
+        case 'ave': return Math.round(_.sum(times) / times.length);
         case 'max': return _.max(times);
         case 'min': return _.min(times);
         default: return null;
