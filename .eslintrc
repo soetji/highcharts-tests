@@ -1,0 +1,64 @@
+{
+    "env": {
+        "browser": true,
+        "commonjs": true,
+        "es6": true,
+        "jest": true,
+        "node": true
+    },
+    "extends": "eslint:recommended",
+    "parser": "babel-eslint",
+    "parserOptions": {
+        "ecmaFeatures": {
+            "experimentalObjectRestSpread": true,
+            "jsx": true
+        },
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react",
+        "compat"
+    ],
+    "rules": {
+        "brace-style": ["error", "1tbs", { "allowSingleLine": true }],
+        "comma-dangle": ["error", "never"],
+        "compat/compat": 2,
+        "indent": ["error", 4, { "SwitchCase": 1 }],
+        "linebreak-style": ["error", "unix"],
+        "max-params": ["warn", 3],
+        "no-alert": "error",
+        "no-extra-boolean-cast": "off",
+        "no-implicit-globals": "error",
+        "no-var": "warn",
+        "quotes": ["error", "single"],
+        "prefer-template": "warn",
+        "semi": ["error", "always"],
+        "sort-keys": ["off", "asc", {"caseSensitive": false, "natural": true}],
+        "react/default-props-match-prop-types": ["warn", { "allowRequiredDefaults": true }],
+        "react/no-array-index-key": "warn",
+        "react/no-deprecated": "warn",
+        "react/no-did-mount-set-state": "error",
+        "react/no-did-update-set-state": "error",
+        "react/no-direct-mutation-state": "error",
+        "react/no-unknown-property": "warn",
+        "react/no-unused-prop-types": "warn",
+        "react/no-will-update-set-state": "error",
+        "react/prop-types": "warn",
+        "react/react-in-jsx-scope": "error",
+        "react/require-default-props": "error",
+        "react/require-optimization": "warn",
+        "react/sort-prop-types": ["warn", {
+            "callbacksLast": true,
+            "ignoreCase": true,
+            "requiredFirst": false
+        }],
+        "react/jsx-handler-names": ["warn", {
+            "eventHandlerPrefix": "__handle",
+            "eventHandlerPropPrefix": "on"
+        }],
+        "react/jsx-pascal-case": "error",
+        "react/jsx-uses-react": "error",
+        "react/jsx-uses-vars": "error",
+        "react/jsx-wrap-multilines": "error"
+    }
+}

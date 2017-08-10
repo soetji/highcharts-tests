@@ -1,8 +1,8 @@
-const saveData = false;
+const saveData = true;
 const chartsTotal = 10;
-const dataPointsTotal = 300;
+const dataPointsTotal = 900;
 const seriesTotal = getUrlValue();
-const seriesMax = 2;
+const seriesMax = 200;
 const dataUrl = 'http://g01dlapp01.galileosuite.com:3000/series';
 
 const initialData = {
