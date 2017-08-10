@@ -20,54 +20,55 @@ function getY(times) {
     }
 }
 
-const options = {
-    chart: {
-        zoomType: 'x'
-    },
-    title: {
-        text: 'Highcharts Charts Test'
-    },
-    legend: {
-        enabled: true
-    },
-    xAxis: {
+function getOptions() {
+    return {
+        chart: {
+            zoomType: 'x'
+        },
         title: {
-            text: 'charts total'
-        }
-    },
-    legend: {
-        enabled: true
-    },
-    plotOptions: {
-        series: {
-            cursor: 'pointer',
-            point: {
-                events: {
-                    click: __handlePointClick
+            text: chartTitle
+        },
+        legend: {
+            enabled: true
+        },
+        xAxis: {
+            title: {
+                text: xAxisTitle
+            }
+        },
+        legend: {
+            enabled: true
+        },
+        plotOptions: {
+            series: {
+                cursor: 'pointer',
+                point: {
+                    events: {
+                        click: __handlePointClick
+                    }
                 }
             }
-        }
-    },
-    tooltip: {
-        formatter: function () {
-            return `${this.series.name}:<br/><b>${this.x}</b> charts <b>${this.y}</b> millisecs`
-        }
-    },
-    yAxis: {
-        title: {
-            text: 'milliseconds'
+        },
+        tooltip: {
+            formatter: tooltipFormatter
+        },
+        yAxis: {
+            title: {
+                text: 'milliseconds'
+            }
         }
     }
 };
 
 function go() {
+    const options = getOptions();
     $.get(dataUrl).then(data => {
         const seriesData = data.map(ser => ({
-            name: `${ser.dataPointsTotal} data points ${ser.seriesTotal} series`,
+            name: makeSeriesName(ser),
             data: ser.result.map(res => ({
                 x: res.chartsTotal,
                 y: getY(res.times),
-                fullname: `${res.chartsTotal} charts ${ser.dataPointsTotal} data points ${ser.seriesTotal} series`,
+                fullname: makePointFullname(ser, res),
                 times: res.times
             }))
         }));
