@@ -13,7 +13,7 @@ const initialData = {
     seriesTotal: seriesTotal
 }
 
-const makeResult = (loadTime) => ({ dataPointsTotal: dataPointsTotal, loadTime: loadTime });
+const makeResult = (time) => ({ dataPointsTotal: dataPointsTotal, time: time });
 const isFinalPage = () => dataPointsTotal >= dataPointsMax;
 const getPageVal = () => dataPointsTotal;
 

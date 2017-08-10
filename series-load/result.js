@@ -30,7 +30,7 @@ $.get(dataUrl).then(data => {
     name: `${ser.chartsTotal} charts ${ser.dataPointsTotal} data points`,
     data: ser.result.map(res => ({
       x: res.seriesTotal,
-      y: _.sum(res.loadTime)
+      y: _.sum(res.time)
     }))
   }));
   options.series = seriesData;
