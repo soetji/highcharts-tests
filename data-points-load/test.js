@@ -1,4 +1,4 @@
-const dataUrl = 'http://g01dlapp01.galileosuite.com:3000/data-points-load';
+const dataUrl = dbDomain + 'data-points-load';
 const saveDataToDb = false;
 const chartsTotal = 1;
 const dataPointsTotal = getUrlValue();

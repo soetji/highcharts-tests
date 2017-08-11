@@ -1,4 +1,4 @@
-const dataUrl = 'http://g01dlapp01.galileosuite.com:3000/data-points-redraw';
+const dataUrl = dbDomain + 'data-points-redraw';
 const saveDataToDb = false;
 const chartsTotal = 1;
 const dataPointsTotal = getUrlValue();

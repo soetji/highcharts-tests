@@ -1,3 +1,5 @@
+const isLocalDb = true;
+const dbDomain = isLocalDb ? 'http://localhost:3000/' : 'http://g01dlapp01.galileosuite.com:3000/';
 const uri = new URI(location.href);
 
 function goMode(mode) {
