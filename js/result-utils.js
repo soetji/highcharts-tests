@@ -1,6 +1,11 @@
+const uri = new URI(location.href);
+const params = uri.search(true);
+if (params.test) {
+    $.getScript(`${params.test}/result.js`);
+}
+
 const isLocalDb = true;
 const dbDomain = isLocalDb ? 'http://localhost:3000/' : 'http://g01dlapp01.galileosuite.com:3000/';
-const uri = new URI(location.href);
 
 function goMode(mode) {
     const params = uri.search(true);
@@ -89,15 +94,18 @@ function getOptions() {
 function go() {
     const options = getOptions();
     $.get(dataUrl).then(data => {
-        const seriesData = data.map(ser => ({
-            name: makeSeriesName(ser),
-            data: ser.result.map(res => ({
-                x: getX(res),
-                y: getY(res.times),
-                debugTitle: makePointDebugTitle(ser, res),
-                times: res.times
-            }))
-        }));
+        const seriesData = data.map(ser => {
+            const boost = ser.highchartsBoost ? ' (boost)' : '';
+            return {
+                name: makeSeriesName(ser) + boost,
+                data: ser.result.map(res => ({
+                    x: getX(res),
+                    y: getY(res.times),
+                    debugTitle: makePointDebugTitle(ser, res),
+                    times: res.times
+                }))
+            }
+        });
         options.series = seriesData;
         $('#box').highcharts(options);
     });

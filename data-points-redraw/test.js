@@ -1,8 +1,9 @@
 const dataUrl = dbDomain + 'data-points-redraw';
 const saveDataToDb = false;
+const highchartsBoost = true;
 const chartsTotal = 1;
 const dataPointsTotal = getUrlValue();
-const seriesTotal = 200;
+const seriesTotal = 100;
 const dataPointsMax = 900;
 
 const initialData = {

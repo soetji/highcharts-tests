@@ -1,9 +1,10 @@
 const dataUrl = dbDomain + 'data-points-load';
-const saveDataToDb = false;
-const chartsTotal = 1;
+const saveDataToDb = true;
+const highchartsBoost = true;
+const chartsTotal = 2;
 const dataPointsTotal = getUrlValue();
 const seriesTotal = 200;
-const dataPointsMax = 9;
+const dataPointsMax = 900;
 
 const initialData = {
     date: new Date(),

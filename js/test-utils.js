@@ -1,6 +1,7 @@
+const uri = new URI(location.href);
+const params = uri.search(true);
 const isLocalDb = true;
 const dbDomain = isLocalDb ? 'http://localhost:3000/' : 'http://g01dlapp01.galileosuite.com:3000/';
-const uri = new URI(location.href);
 const pageChartData = [];
 const myStorage = window.localStorage;
 const testIncrement = 5;
@@ -92,18 +93,17 @@ function saveData() {
     }
 };
 
-function init() {
+function init(initialData) {
     const params = uri.search(true);
     params.val = 1;
+    initialData.highchartsBoost = highchartsBoost;
     myStorage.setItem('sessionTimeData', '[]');
     myStorage.setItem('initialData', JSON.stringify(initialData));
     location.href = uri.search(params).toString();
 }
 
 function go() {
-    if (getUrlValue() === undefined || myStorage.getItem('sessionTimeData') === null) {
-        init();
-    } else {
+    const _go = () => {
         for (let i = 0; i < chartsTotal; i++) {
             _.merge(options, {
                 plotOptions: {
@@ -118,4 +118,20 @@ function go() {
             $('<div class="hc-box" />').appendTo('#box').highcharts(options);
         }
     }
+
+    if (getUrlValue() === undefined || myStorage.getItem('sessionTimeData') === null) {
+        init(initialData);
+    } else {
+        if (highchartsBoost) {
+            $.getScript('http://code.highcharts.com/modules/boost.js')
+            .then(_go);
+        } else {
+            _go();
+        }
+    }
+}
+
+
+if (params.test) {
+    $.getScript(`${params.test}/test.js`);
 }
