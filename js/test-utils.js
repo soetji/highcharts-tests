@@ -6,40 +6,13 @@ const pageChartData = [];
 const myStorage = window.localStorage;
 const testIncrement = 5;
 let loadedChartsTotal = 0;
+let options;
 
 Highcharts.setOptions({
     global: {
         useUTC: false
     }
 });
-
-const options = {
-    chart: {
-        events: {
-            load: null
-        },
-        zoomType: 'x'
-    },
-    title: {
-        text: 'Zoom Test'
-    },
-    legend: {
-        enabled: false
-    },
-    xAxis: {
-        type: 'datetime',
-        min: Date.now() - 24 * 3600000,
-        max: Date.now()
-    },
-    legend: {
-        enabled: false
-    },
-    plotOptions: {
-        series: {
-            pointStart: Date.now() - 24 * 3600000,
-        }
-    }
-};
 
 function postData(data) {
     return $.ajax({
@@ -97,9 +70,44 @@ function init(initialData) {
     const params = uri.search(true);
     params.val = 1;
     initialData.highchartsBoost = highchartsBoost;
+    initialData.chartType = chartType;
+    initialData.chartStacking = chartStacking;
     myStorage.setItem('sessionTimeData', '[]');
     myStorage.setItem('initialData', JSON.stringify(initialData));
     location.href = uri.search(params).toString();
+}
+
+function highchartsSetup() {
+    options = {
+        chart: {
+            events: {
+                load: null
+            },
+            type: chartType,
+            zoomType: 'x'
+        },
+        title: {
+            text: 'Zoom Test'
+        },
+        legend: {
+            enabled: false
+        },
+        xAxis: {
+            type: 'datetime',
+            min: Date.now() - 24 * 3600000,
+            max: Date.now()
+        },
+        legend: {
+            enabled: false
+        },
+        plotOptions: {
+            series: {
+                pointStart: Date.now() - 24 * 3600000,
+            }
+        }
+    };
+
+    options.plotOptions[chartType] = { stacking: chartStacking };
 }
 
 function go() {
@@ -122,6 +130,7 @@ function go() {
     if (getUrlValue() === undefined || myStorage.getItem('sessionTimeData') === null) {
         init(initialData);
     } else {
+        highchartsSetup();
         if (highchartsBoost) {
             $.getScript('http://code.highcharts.com/modules/boost.js')
             .then(_go);

@@ -1,10 +1,12 @@
 const dataUrl = dbDomain + 'data-points-load';
-const saveDataToDb = true;
+const saveDataToDb = false;
 const highchartsBoost = true;
 const chartsTotal = 2;
 const dataPointsTotal = getUrlValue();
 const seriesTotal = 200;
 const dataPointsMax = 900;
+const chartType = 'line';
+const chartStacking = false;
 
 const initialData = {
     date: new Date(),

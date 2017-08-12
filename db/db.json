@@ -9,6 +9,8 @@
       "chartsMax": 200,
       "dataPointsTotal": 300,
       "seriesTotal": 10,
+      "chartType": "line",
+      "chartStacking": false,
       "result": [
         {
           "chartsTotal": 1,
@@ -21119,6 +21121,8 @@
       "chartsMax": 50,
       "dataPointsTotal": 300,
       "seriesTotal": 100,
+      "chartType": "line",
+      "chartStacking": false,
       "result": [
         {
           "chartsTotal": 1,
@@ -22654,6 +22658,8 @@
       "chartsMax": 30,
       "dataPointsTotal": 300,
       "seriesTotal": 200,
+      "chartType": "line",
+      "chartStacking": false,
       "result": [
         {
           "chartsTotal": 1,
@@ -23279,6 +23285,8 @@
       "chartsMax": 30,
       "dataPointsTotal": 300,
       "seriesTotal": 200,
+      "chartType": "line",
+      "chartStacking": false,
       "result": [
         {
           "chartsTotal": 1,
@@ -23486,6 +23494,8 @@
       "chartsTotal": 1,
       "dataPointsMax": 900,
       "seriesTotal": 10,
+      "chartType": "line",
+      "chartStacking": false,
       "result": [
         {
           "dataPointsTotal": 1,
@@ -28896,6 +28906,8 @@
       "chartsTotal": 1,
       "dataPointsMax": 900,
       "seriesTotal": 100,
+      "chartType": "line",
+      "chartStacking": false,
       "result": [
         {
           "dataPointsTotal": 1,
@@ -29992,6 +30004,8 @@
       "chartsTotal": 1,
       "dataPointsMax": 900,
       "seriesTotal": 200,
+      "chartType": "line",
+      "chartStacking": false,
       "result": [
         {
           "dataPointsTotal": 1,
@@ -31089,6 +31103,8 @@
       "dataPointsMax": 900,
       "seriesTotal": 200,
       "highchartsBoost": true,
+      "chartType": "line",
+      "chartStacking": false,
       "result": [
         {
           "dataPointsTotal": 1,
@@ -32186,6 +32202,8 @@
       "dataPointsMax": 900,
       "seriesTotal": 100,
       "highchartsBoost": true,
+      "chartType": "line",
+      "chartStacking": false,
       "result": [
         {
           "dataPointsTotal": 1,
@@ -33285,6 +33303,8 @@
       "chartsMax": 50,
       "dataPointsTotal": 300,
       "seriesTotal": 100,
+      "chartType": "line",
+      "chartStacking": false,
       "result": [
         {
           "chartsTotal": 1,
@@ -34820,6 +34840,8 @@
       "chartsMax": 15,
       "dataPointsTotal": 900,
       "seriesTotal": 200,
+      "chartType": "line",
+      "chartStacking": false,
       "result": [
         {
           "chartsTotal": 1,
@@ -35025,6 +35047,8 @@
       "chartsMax": 30,
       "dataPointsTotal": 300,
       "seriesTotal": 200,
+      "chartType": "line",
+      "chartStacking": false,
       "result": [
         {
           "chartsTotal": 1,
@@ -35650,6 +35674,8 @@
       "chartsMax": 200,
       "dataPointsTotal": 300,
       "seriesTotal": 10,
+      "chartType": "line",
+      "chartStacking": false,
       "result": [
         {
           "chartsTotal": 1,
@@ -56763,6 +56789,8 @@
       "dataPointsMax": 900,
       "seriesTotal": 10,
       "highchartsBoost": false,
+      "chartType": "line",
+      "chartStacking": false,
       "result": [
         {
           "dataPointsTotal": 1,
@@ -57860,6 +57888,8 @@
       "dataPointsMax": 900,
       "seriesTotal": 100,
       "highchartsBoost": false,
+      "chartType": "line",
+      "chartStacking": false,
       "result": [
         {
           "dataPointsTotal": 1,
@@ -58957,6 +58987,8 @@
       "dataPointsMax": 900,
       "seriesTotal": 200,
       "highchartsBoost": false,
+      "chartType": "line",
+      "chartStacking": false,
       "result": [
         {
           "dataPointsTotal": 1,
@@ -60054,6 +60086,8 @@
       "dataPointsMax": 900,
       "seriesTotal": 200,
       "highchartsBoost": false,
+      "chartType": "line",
+      "chartStacking": false,
       "result": [
         {
           "dataPointsTotal": 1,
@@ -61332,6 +61366,8 @@
       "dataPointsMax": 900,
       "seriesTotal": 200,
       "highchartsBoost": true,
+      "chartType": "line",
+      "chartStacking": false,
       "result": [
         {
           "dataPointsTotal": 1,
@@ -62429,6 +62465,8 @@
       "dataPointsMax": 900,
       "seriesTotal": 10,
       "highchartsBoost": true,
+      "chartType": "line",
+      "chartStacking": false,
       "result": [
         {
           "dataPointsTotal": 1,
@@ -63526,6 +63564,8 @@
       "dataPointsMax": 900,
       "seriesTotal": 100,
       "highchartsBoost": true,
+      "chartType": "line",
+      "chartStacking": false,
       "result": [
         {
           "dataPointsTotal": 1,
@@ -64623,6 +64663,8 @@
       "dataPointsMax": 900,
       "seriesTotal": 200,
       "highchartsBoost": true,
+      "chartType": "line",
+      "chartStacking": false,
       "result": [
         {
           "dataPointsTotal": 1,
@@ -65902,6 +65944,8 @@
       "chartsTotal": 1,
       "dataPointsTotal": 300,
       "seriesMax": 200,
+      "chartType": "line",
+      "chartStacking": false,
       "result": [
         {
           "seriesTotal": 1,
@@ -67112,6 +67156,8 @@
       "chartsTotal": 1,
       "dataPointsTotal": 600,
       "seriesMax": 200,
+      "chartType": "line",
+      "chartStacking": false,
       "result": [
         {
           "seriesTotal": 1,
@@ -68322,6 +68368,8 @@
       "chartsTotal": 1,
       "dataPointsTotal": 900,
       "seriesMax": 200,
+      "chartType": "line",
+      "chartStacking": false,
       "result": [
         {
           "seriesTotal": 1,
@@ -69532,6 +69580,8 @@
       "chartsTotal": 10,
       "dataPointsTotal": 300,
       "seriesMax": 200,
+      "chartType": "line",
+      "chartStacking": false,
       "result": [
         {
           "seriesTotal": 1,
@@ -72542,6 +72592,8 @@
       "chartsTotal": 10,
       "dataPointsTotal": 600,
       "seriesMax": 200,
+      "chartType": "line",
+      "chartStacking": false,
       "result": [
         {
           "seriesTotal": 1,
@@ -75552,6 +75604,8 @@
       "chartsTotal": 10,
       "dataPointsTotal": 900,
       "seriesMax": 200,
+      "chartType": "line",
+      "chartStacking": false,
       "result": [
         {
           "seriesTotal": 1,

@@ -4,6 +4,8 @@ const chartsTotal = 10;
 const dataPointsTotal = 900;
 const seriesTotal = getUrlValue();
 const seriesMax = 200;
+const chartType = 'line';
+const chartStacking = false;
 
 const initialData = {
     date: new Date(),
