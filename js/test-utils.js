@@ -140,7 +140,6 @@ function go() {
     }
 }
 
-
 if (params.test) {
     $.getScript(`${params.test}/test.js`);
 }
