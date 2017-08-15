@@ -120,9 +120,12 @@ class Result {
         const options = this.makeOptions();
         $.get(`${this.dbDomain}${this.el.urlPart}-${this.action.urlPart}`).then(data => {
             const seriesData = data.map(ser => {
-                const boost = ser.highchartsBoost ? ' (boost)' : '';
+                const info = [];
+                info.push(ser.chartType);
+                if (ser.chartStacking) info.push('stacked');
+                if (ser.highchartsBoost) info.push('boost');
                 return {
-                    name: this.el.makeSeriesName(ser) + boost,
+                    name: `${this.el.makeSeriesName(ser)} (${info.join(' ')})`,
                     data: ser.result.map(res => ({
                         x: this.el.getX(res),
                         y: this.getY(res.times),

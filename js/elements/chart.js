@@ -1,13 +1,13 @@
 class Chart {
     constructor(urlVal) {
         this.urlPart = 'chart';
-        this.highchartsBoost = true;
+        this.highchartsBoost = false;
         this.chartsTotal = urlVal;
-        this.dataPointsTotal = 9;
-        this.seriesTotal = 5;
-        this.chartsMax = 10;
-        this.chartType = 'area';
-        this.chartStacking = true;
+        this.dataPointsTotal = 300;
+        this.seriesTotal = 200;
+        this.chartsMax = 200;
+        this.chartType = 'line';
+        this.chartStacking = false;
 
         // Result
         this.chartTitle = 'Charts';

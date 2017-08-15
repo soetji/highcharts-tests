@@ -4,10 +4,10 @@ class DataPoint {
         this.highchartsBoost = false;
         this.chartsTotal = 1;
         this.dataPointsTotal = urlVal;
-        this.seriesTotal = 10;
+        this.seriesTotal = 100;
         this.dataPointsMax = 900;
-        this.chartType = 'line';
-        this.chartStacking = false;
+        this.chartType = 'area';
+        this.chartStacking = true;
 
         // Result
         this.chartTitle = 'Data Points';
