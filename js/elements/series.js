@@ -1,14 +1,16 @@
 class Series {
     constructor(urlVal) {
-        this.dataUrl = 'series-load';
-        this.saveDataToDb = false;
+        this.urlPart = 'series';
         this.highchartsBoost = true;
         this.chartsTotal = 10;
-        this.dataPointsTotal = 900;
+        this.dataPointsTotal = 300;
         this.seriesTotal = urlVal;
         this.seriesMax = 200;
         this.chartType = 'line';
         this.chartStacking = false;
+
+        // Result
+        this.chartTitle = 'Series';
     }
 
     makeInitialData() {
@@ -30,6 +32,22 @@ class Series {
     
     isFinalPage() {
         return this.seriesTotal >= this.seriesMax;
+    }
+    
+    getX(result) {
+        return result.seriesTotal
+    }
+    
+    makeSeriesName(series) {
+        return `${series.chartsTotal} charts ${series.dataPointsTotal} data points`;
+    }
+    
+    makePointDebugTitle(series, point) {
+        return `${series.chartsTotal} charts ${series.dataPointsTotal} data points ${point.seriesTotal} series. Time per series:`;
+    }
+    
+    tooltipFormatter(point) {
+        return `${this.series.name}:<br/><b>${this.x}</b> series <b>${this.y}</b> msec`
     }
 }
 

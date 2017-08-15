@@ -82,14 +82,14 @@ class Result {
                 zoomType: 'x'
             },
             title: {
-                text: this.el.chartTitle
+                text: `${this.el.chartTitle} ${this.action.chartTitle}`
             },
             legend: {
                 enabled: true
             },
             xAxis: {
                 title: {
-                    text: this.el.xAxisTitle
+                    text: `${this.el.chartTitle} Total`
                 }
             },
             legend: {
@@ -118,7 +118,7 @@ class Result {
     
     go() {
         const options = this.makeOptions();
-        $.get(this.dbDomain + this.el.dataUrl).then(data => {
+        $.get(`${this.dbDomain}${this.el.urlPart}-${this.action.urlPart}`).then(data => {
             const seriesData = data.map(ser => {
                 const boost = ser.highchartsBoost ? ' (boost)' : '';
                 return {

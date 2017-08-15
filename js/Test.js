@@ -6,6 +6,7 @@ Highcharts.setOptions({
 
 class Test {
     constructor(element, action) {
+        this.saveDataToDb = false;
         this.isLocalDb = true;
         this.dbDomain = this.isLocalDb ? 'http://localhost:3000/' : 'http://g01dlapp01.galileosuite.com:3000/';
         this.pageChartData = [];
@@ -46,7 +47,7 @@ class Test {
     postData(data) {
         return $.ajax({
             method: 'POST',
-            url: this.dbDomain + this.el.dataUrl,
+            url: `${this.dbDomain}${this.el.urlPart}-${this.action.urlPart}`,
             contentType: 'application/json',
             data: JSON.stringify(data)
         })
@@ -55,7 +56,7 @@ class Test {
     putData(id, data) {
         return $.ajax({
             method: 'PUT',
-            url: this.dbDomain + this.el.dataUrl + '/' + id,
+            url: `${this.dbDomain}${this.el.urlPart}-${this.action.urlPart}/${id}`,
             contentType: 'application/json',
             data: JSON.stringify(data)
         })
@@ -86,7 +87,7 @@ class Test {
                 this.myStorage.removeItem('sessionTimeData');
                 data.result = res;
                 console.log(data);
-                if (this.el.saveDataToDb) {
+                if (this.saveDataToDb) {
                     this.postData(data);
                 }
             } else {

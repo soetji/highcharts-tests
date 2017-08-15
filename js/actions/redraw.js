@@ -1,4 +1,9 @@
 class Redraw {
+    constructor() {
+        this.urlPart = 'redraw';
+        this.chartTitle = 'Redraw';
+    }
+
     __handleLoad() {
         // this is chart object
         this.options.test.startTime = Date.now();

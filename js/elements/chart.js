@@ -1,7 +1,6 @@
 class Chart {
     constructor(urlVal) {
-        this.dataUrl = 'charts-load';
-        this.saveDataToDb = false;
+        this.urlPart = 'chart';
         this.highchartsBoost = true;
         this.chartsTotal = urlVal;
         this.dataPointsTotal = 9;
@@ -11,8 +10,7 @@ class Chart {
         this.chartStacking = true;
 
         // Result
-        this.chartTitle = 'Charts Load';
-        this.xAxisTitle = 'Charts total';
+        this.chartTitle = 'Charts';
     }
 
     makeInitialData() {

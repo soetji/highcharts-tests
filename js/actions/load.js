@@ -1,4 +1,9 @@
 class Load {
+    constructor() {
+        this.urlPart = 'load';
+        this.chartTitle = 'Load';
+    }
+
     __handleLoad() {
         // this is chart object
         this.options.test.saveData(this.options.test.startTime);
