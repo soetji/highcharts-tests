@@ -33,4 +33,4 @@ class DataPoint {
     }
 }
 
-const element = new DataPoint(Test.getUrlValue());
+const Element = DataPoint;

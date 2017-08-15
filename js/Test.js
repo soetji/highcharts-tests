@@ -19,28 +19,34 @@ class Test {
         this.params = this.uri.search(true);
         this.urlVal = Test.getUrlValue();
     }
+    
+    static getParams() {
+        const uri = new URI(location.href);
+        return uri.search(true);
+    }
+    
+    static getUrlValue() {
+        const params = this.getParams();
+        return params.val === undefined ? undefined : Number(params.val);
+    }
 
     static go() {
-        const uri = new URI(location.href);
-        const params = uri.search(true);
+        const params = this.getParams();
         if (params.el && params.act) {
             $.when($.getScript(`js/elements/${params.el}.js`), $.getScript(`js/actions/${params.act}.js`))
             .then(() => {
+                const element = new Element(this.getUrlValue());
+                const action = new Action();
                 const test = new Test(element, action);
                 test.go();
             });
         }
     }
 
-    static getUrlValue() {
-        const params = (new URI(location.href)).search(true);
-        return params.val === undefined ? undefined : Number(params.val);
-    }
-
     postData(data) {
         return $.ajax({
             method: 'POST',
-            url: this.el.dataUrl,
+            url: this.dbDomain + this.el.dataUrl,
             contentType: 'application/json',
             data: JSON.stringify(data)
         })
@@ -49,7 +55,7 @@ class Test {
     putData(id, data) {
         return $.ajax({
             method: 'PUT',
-            url: this.el.dataUrl + '/' + id,
+            url: this.dbDomain + this.el.dataUrl + '/' + id,
             contentType: 'application/json',
             data: JSON.stringify(data)
         })
@@ -63,7 +69,7 @@ class Test {
     }
 
     goNextPage() {
-        this.params.val = this.urlVal === 1 ? testIncrement : this.urlVal + testIncrement;
+        this.params.val = this.urlVal === 1 ? this.testIncrement : this.urlVal + this.testIncrement;
         location.href = this.uri.search(this.params).toString();
     }
 

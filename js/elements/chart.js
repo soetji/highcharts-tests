@@ -6,9 +6,13 @@ class Chart {
         this.chartsTotal = urlVal;
         this.dataPointsTotal = 9;
         this.seriesTotal = 5;
-        this.chartsMax = 1;
+        this.chartsMax = 10;
         this.chartType = 'area';
         this.chartStacking = true;
+
+        // Result
+        this.chartTitle = 'Charts Load';
+        this.xAxisTitle = 'Charts total';
     }
 
     makeInitialData() {
@@ -31,6 +35,22 @@ class Chart {
     isFinalPage() {
         return this.chartsTotal >= this.chartsMax;
     }
+
+    getX(result) {
+        return result.chartsTotal
+    }
+
+    makeSeriesName(series) {
+        return `${series.dataPointsTotal} data points ${series.seriesTotal} series`;
+    }
+
+    makePointDebugTitle(series, point) {
+        return `${point.chartsTotal} charts ${series.dataPointsTotal} data points ${series.seriesTotal} series. Time per chart:`;
+    }
+
+    tooltipFormatter(point) {
+        return `${this.series.name}:<br/><b>${this.x}</b> charts <b>${this.y}</b> msec`
+    }
 }
 
-const element = new Chart(Test.getUrlValue());
+const Element = Chart;

@@ -33,4 +33,4 @@ class Series {
     }
 }
 
-const element = new Series(Test.getUrlValue());
+const Element = Series;

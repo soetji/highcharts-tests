@@ -8,10 +8,10 @@
 <body>
     <div class='nav'>
         <a href='.'>Home</a> |
-        <a href='javascript:null' onclick="goSum()">Sum</a> |
-        <a href='javascript:null' onclick="goAve()">Ave</a> |
-        <a href='javascript:null' onclick="goMax()">Max</a> |
-        <a href='javascript:null' onclick="goMin()">Min</a>
+        <a href='javascript:null' onclick="Result.goSum()">Sum</a> |
+        <a href='javascript:null' onclick="Result.goAve()">Ave</a> |
+        <a href='javascript:null' onclick="Result.goMax()">Max</a> |
+        <a href='javascript:null' onclick="Result.goMin()">Min</a>
     </div>
     <div id='box'></div>
 
@@ -20,7 +20,8 @@
     <script src='https://code.highcharts.com/highcharts.js'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/core-js/2.4.1/core.min.js'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.18.10/URI.min.js'></script>
-    <script src='js/result-utils.js'></script>
+    <script src='js/Result.js'></script>
+    <script>Result.go()</script>
 </body>
 
 </html>

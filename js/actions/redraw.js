@@ -1,11 +1,11 @@
 class Redraw {
-    handleLoad() {
+    __handleLoad() {
         // this is chart object
         this.options.test.startTime = Date.now();
         this.redraw();
     };
 
-    handleRedraw() {
+    __handleRedraw() {
         // this is chart object
         this.options.test.saveData(this.options.test.startTime);
     };
@@ -15,10 +15,10 @@ class Redraw {
         options.test = {
             saveData: saveData
         };
-        options.chart.events.load = this.handleLoad;
-        options.chart.events.redraw = this.handleRedraw;
+        options.chart.events.load = this.__handleLoad;
+        options.chart.events.redraw = this.__handleRedraw;
         return options;
     }
 }
 
-const action = new Redraw();
+const Action = Redraw;

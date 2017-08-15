@@ -1,5 +1,5 @@
 class Load {
-    handleLoad() {
+    __handleLoad() {
         // this is chart object
         this.options.test.saveData(this.options.test.startTime);
     };
@@ -10,9 +10,9 @@ class Load {
             saveData: saveData,
             startTime: Date.now()
         };
-        options.chart.events.load = this.handleLoad;
+        options.chart.events.load = this.__handleLoad;
         return options;
     }
 }
 
-const action = new Load();
+const Action = Load;
