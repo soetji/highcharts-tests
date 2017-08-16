@@ -87,6 +87,7 @@ class Test {
 
     saveData(chartIndex, startTime) {
         // this is chart object
+        const maxUrlVal = 0;
         const maxTotalResultTime = 10000;
         const resultTime = Date.now() - startTime;
         const res = JSON.parse(this.myStorage.getItem('sessionTimeData'));
@@ -95,7 +96,7 @@ class Test {
         this.loadedChartsTotal++;
         if (this.loadedChartsTotal === this.el.chartsTotal) {
             const totalResultTime = _.sum(this.pageChartData);
-            if (this.el.isFinalPage() || (this.urlVal > 50 && totalResultTime > maxTotalResultTime)) {
+            if (this.el.isFinalPage() || (this.urlVal > maxUrlVal && totalResultTime > maxTotalResultTime)) {
                 this.finalSave(res);
             } else {
                 this.myStorage.setItem('sessionTimeData', JSON.stringify(res));

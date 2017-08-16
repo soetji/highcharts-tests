@@ -1,19 +1,22 @@
-class Add {
+class Show {
     constructor() {
-        this.urlPart = 'add';
-        this.chartTitle = 'Add';
+        this.urlPart = 'show';
+        this.chartTitle = 'Show';
     }
 
     __handleLoad() {
         // this is chart object
-        const newSeries = this.options.test.makeSeries();
-        this.options.test.startTime = Date.now();
-        this.addSeries(newSeries, true, true);
+        this.series[0].hide();
     };
 
     __handleRedraw() {
         // this is chart object
-        this.options.test.saveData(this.options.test.startTime);
+        if (this.series[0].visible) {
+            this.options.test.saveData(this.options.test.startTime);
+        } else {
+            this.options.test.startTime = Date.now();
+            this.series[0].show();
+        }
     };
     
     assignOptions(options, saveData, makeSeries) {
@@ -28,4 +31,4 @@ class Add {
     }
 }
 
-const Action = Add;
+const Action = Show;
