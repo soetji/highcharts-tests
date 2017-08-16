@@ -3,11 +3,11 @@ class Chart {
         this.urlPart = 'chart';
         this.highchartsBoost = true;
         this.chartsTotal = urlVal;
-        this.dataPointsTotal = 300;
+        this.dataPointsTotal = 900;
         this.seriesTotal = 25;
         this.chartsMax = 200;
-        this.chartType = 'area';
-        this.chartStacking = true;
+        this.chartType = 'line';
+        this.chartStacking = false;
 
         // Result
         this.chartTitle = 'Charts';

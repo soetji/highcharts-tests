@@ -6,7 +6,7 @@ Highcharts.setOptions({
 
 class Test {
     constructor(element, action) {
-        this.saveDataToDb = false;
+        this.saveDataToDb = true;
         this.isLocalDb = true;
         this.dbDomain = this.isLocalDb ? 'http://localhost:3000/' : 'http://g01dlapp01.galileosuite.com:3000/';
         this.pageChartData = [];
