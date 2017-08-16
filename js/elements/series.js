@@ -1,9 +1,9 @@
 class Series {
     constructor(urlVal) {
         this.urlPart = 'series';
-        this.highchartsBoost = false;
+        this.highchartsBoost = true;
         this.chartsTotal = 10;
-        this.dataPointsTotal = 900;
+        this.dataPointsTotal = 300;
         this.seriesTotal = urlVal;
         this.seriesMax = 200;
         this.chartType = 'line';

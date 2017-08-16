@@ -6,7 +6,7 @@ Highcharts.setOptions({
 
 class Test {
     constructor(element, action) {
-        this.saveDataToDb = true;
+        this.saveDataToDb = false;
         this.isLocalDb = true;
         this.dbDomain = this.isLocalDb ? 'http://localhost:3000/' : 'http://g01dlapp01.galileosuite.com:3000/';
         this.pageChartData = [];
@@ -95,7 +95,7 @@ class Test {
         this.loadedChartsTotal++;
         if (this.loadedChartsTotal === this.el.chartsTotal) {
             const totalResultTime = _.sum(this.pageChartData);
-            if (this.el.isFinalPage() || totalResultTime > maxTotalResultTime) {
+            if (this.el.isFinalPage() || (this.urlVal > 50 && totalResultTime > maxTotalResultTime)) {
                 this.finalSave(res);
             } else {
                 this.myStorage.setItem('sessionTimeData', JSON.stringify(res));
