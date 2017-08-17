@@ -15,7 +15,7 @@ class Redraw {
         this.options.test.saveData(this.options.test.startTime);
     };
     
-    assignOptions(options, saveData) {
+    assignOptions(element, options, saveData) {
         // Do this before calling highcharts
         options.test = {
             saveData: saveData

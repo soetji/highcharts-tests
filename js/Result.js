@@ -124,6 +124,9 @@ class Result {
                 info.push(ser.chartType);
                 if (ser.chartStacking) info.push('stacked');
                 if (ser.highchartsBoost) info.push('boost');
+                if (ser.maxSeriesToLoad) info.push(`${ser.maxSeriesToLoad} max series shown`);
+                if (ser.maxSeriesToHide) info.push(`${ser.maxSeriesToHide} max series setVisible(false)`);
+
                 return {
                     name: `${this.el.makeSeriesName(ser)} (${info.join(' ')})`,
                     data: ser.result.map(res => ({

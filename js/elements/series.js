@@ -3,11 +3,12 @@ class Series {
         this.urlPart = 'series';
         this.highchartsBoost = true;
         this.chartsTotal = 10;
-        this.dataPointsTotal = 300;
+        this.dataPointsTotal = 900;
         this.seriesTotal = urlVal;
         this.seriesMax = 200;
         this.chartType = 'line';
         this.chartStacking = false;
+        // this.maxSeriesToLoad = 25;
 
         // Result
         this.chartTitle = 'Series';
@@ -22,7 +23,8 @@ class Series {
             seriesMax: this.seriesMax,
             highchartsBoost: this.highchartsBoost,
             chartType: this.chartType,
-            chartStacking: this.chartStacking
+            chartStacking: this.chartStacking,
+            maxSeriesToLoad: this.maxSeriesToLoad
         };
     }
 

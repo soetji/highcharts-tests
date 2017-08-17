@@ -92,6 +92,7 @@ class Test {
         const resultTime = Date.now() - startTime;
         const res = JSON.parse(this.myStorage.getItem('sessionTimeData'));
         this.pageChartData[chartIndex] = resultTime;
+        console.log(this.pageChartData);
         res.push(this.el.makeResult(this.pageChartData));
         this.loadedChartsTotal++;
         if (this.loadedChartsTotal === this.el.chartsTotal) {
@@ -145,6 +146,14 @@ class Test {
         }));
     }
 
+    seriesToLoad(series) {
+        if (this.el.maxSeriesToLoad === undefined) {
+            return series;
+        } else {
+            return series.slice(0, this.el.maxSeriesToLoad);
+        }
+    }
+
     go() {
         const _go = () => {
             const options = this.makeOptions();
@@ -155,10 +164,10 @@ class Test {
                             pointInterval: 24 * 3600000 / this.el.dataPointsTotal
                         }
                     },
-                    series: this.makeSeries()
+                    series: this.seriesToLoad(this.makeSeries())
                 });
 
-                this.action.assignOptions(options, this.saveData.bind(this, chartIndex),
+                this.action.assignOptions(this.el, options, this.saveData.bind(this, chartIndex),
                     this.makeSeries.bind(this));
                 $('<div class="hc-box" />').appendTo('#box').highcharts(options);
             }

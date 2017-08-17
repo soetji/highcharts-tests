@@ -19,7 +19,7 @@ class Show {
         }
     };
     
-    assignOptions(options, saveData, makeSeries) {
+    assignOptions(element, options, saveData, makeSeries) {
         // Do this before calling highcharts
         options.test = {
             saveData: saveData,
