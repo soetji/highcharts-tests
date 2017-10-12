@@ -1,12 +1,13 @@
 class Chart {
     constructor(urlVal) {
-        this.dataPointsTotal = 900;
-        this.seriesTotal = 25;
-        this.highchartsBoost = true;
+        this.dataPointsTotal = 300;
+        this.seriesTotal = 10;
+        this.highchartsBoost = false;
         this.chartType = 'area';
         this.chartStacking = true;
         this.chartsMax = 200;
         // this.maxSeriesToHide = 10;
+        // this.highchartsVersion = '5.0.14';
         this.highchartsVersion = '6.0.1';
         this.urlPart = 'chart';
         this.chartsTotal = urlVal;
