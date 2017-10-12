@@ -1,13 +1,15 @@
 class DataPoint {
     constructor(urlVal) {
-        this.urlPart = 'data-point';
-        this.highchartsBoost = true;
         this.chartsTotal = 1;
-        this.dataPointsTotal = urlVal;
         this.seriesTotal = 200;
+        this.highchartsBoost = true;
         this.dataPointsMax = 900;
         this.chartType = 'area';
         this.chartStacking = true;
+        // this.highchartsVersion = '5.0.14';
+        this.highchartsVersion = '6.0.1';
+        this.urlPart = 'data-point';
+        this.dataPointsTotal = urlVal;
 
         // Result
         this.chartTitle = 'Data Points';

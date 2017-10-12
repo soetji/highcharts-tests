@@ -1,14 +1,16 @@
 class Series {
     constructor(urlVal) {
-        this.urlPart = 'series';
-        this.highchartsBoost = true;
         this.chartsTotal = 10;
         this.dataPointsTotal = 900;
-        this.seriesTotal = urlVal;
+        this.highchartsBoost = true;
         this.seriesMax = 200;
-        this.chartType = 'line';
-        this.chartStacking = false;
+        this.chartType = 'area';
+        this.chartStacking = true;
         // this.maxSeriesToLoad = 25;
+        // this.highchartsVersion = '5.0.14';
+        this.highchartsVersion = '6.0.1';
+        this.urlPart = 'series';
+        this.seriesTotal = urlVal;
 
         // Result
         this.chartTitle = 'Series';
