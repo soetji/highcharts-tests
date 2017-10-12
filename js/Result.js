@@ -126,6 +126,7 @@ class Result {
                 if (ser.highchartsBoost) info.push('boost');
                 if (ser.maxSeriesToLoad) info.push(`${ser.maxSeriesToLoad} max series shown`);
                 if (ser.maxSeriesToHide) info.push(`${ser.maxSeriesToHide} max series setVisible(false)`);
+                info.push(ser.highchartsVersion);
 
                 return {
                     name: `${this.el.makeSeriesName(ser)} (${info.join(' ')})`,

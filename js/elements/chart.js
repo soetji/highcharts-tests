@@ -1,14 +1,15 @@
 class Chart {
     constructor(urlVal) {
-        this.urlPart = 'chart';
-        this.highchartsBoost = true;
-        this.chartsTotal = urlVal;
         this.dataPointsTotal = 900;
         this.seriesTotal = 25;
-        this.chartsMax = 40;
-        this.chartType = 'line';
-        this.chartStacking = false;
-        this.maxSeriesToHide = 10;
+        this.highchartsBoost = true;
+        this.chartType = 'area';
+        this.chartStacking = true;
+        this.chartsMax = 200;
+        // this.maxSeriesToHide = 10;
+        this.highchartsVersion = '6.0.1';
+        this.urlPart = 'chart';
+        this.chartsTotal = urlVal;
 
         // Result
         this.chartTitle = 'Charts';
@@ -22,6 +23,7 @@ class Chart {
             dataPointsTotal: this.dataPointsTotal,
             seriesTotal: this.seriesTotal,
             highchartsBoost: this.highchartsBoost,
+            highchartsVersion: this.highchartsVersion,
             chartType: this.chartType,
             chartStacking: this.chartStacking,
             maxSeriesToHide: this.maxSeriesToHide

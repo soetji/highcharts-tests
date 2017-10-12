@@ -8,6 +8,7 @@ class Test {
     constructor(element, action) {
         this.saveDataToDb = true;
         this.isLocalDb = true;
+        this.maxTotalResultTime = 20000; // ms
         this.dbDomain = this.isLocalDb ? 'http://localhost:3000/' : 'http://g01dlapp01.galileosuite.com:3000/';
         this.pageChartData = [];
         this.myStorage = window.localStorage;
@@ -87,8 +88,6 @@ class Test {
 
     saveData(chartIndex, startTime) {
         // this is chart object
-        const maxUrlVal = 0;
-        const maxTotalResultTime = 10000;
         const resultTime = Date.now() - startTime;
         const res = JSON.parse(this.myStorage.getItem('sessionTimeData'));
         this.pageChartData[chartIndex] = resultTime;
@@ -97,7 +96,7 @@ class Test {
         this.loadedChartsTotal++;
         if (this.loadedChartsTotal === this.el.chartsTotal) {
             const totalResultTime = _.sum(this.pageChartData);
-            if (this.el.isFinalPage() || (this.urlVal > maxUrlVal && totalResultTime > maxTotalResultTime)) {
+            if (this.el.isFinalPage() || (totalResultTime > this.maxTotalResultTime)) {
                 this.finalSave(res);
             } else {
                 this.myStorage.setItem('sessionTimeData', JSON.stringify(res));
@@ -176,12 +175,15 @@ class Test {
         if (this.urlVal === undefined || this.myStorage.getItem('sessionTimeData') === null) {
             this.init();
         } else {
-            if (this.el.highchartsBoost) {
-                $.getScript('http://code.highcharts.com/modules/boost.js')
-                    .then(_go);
-            } else {
-                _go();
-            }
+            $.getScript(`https://code.highcharts.com/${this.el.highchartsVersion}/highcharts.js`)
+                .then(() => {
+                    if (this.el.highchartsBoost) {
+                        $.getScript('http://code.highcharts.com/modules/boost.js')
+                            .then(_go);
+                    } else {
+                        _go();
+                    }
+                });
         }
 
     }
